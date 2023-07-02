@@ -2,12 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Stats preview card component</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Inter 400 700 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lexend Deca 400 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main>
+      <div class="card">
+        <div class="card__hero">
+          <picture>
+            <source
+              media="(min-width:1440px)"
+              srcset="images/image-header-desktop.jpg"
+            />
+            <img
+              src="images/image-header-mobile.jpg"
+              alt="header-img"
+              class="card__img"
+            />
+          </picture>
+        </div>
+
+        <div class="card__body">
+          <h1 class="card__title">
+            Get <mark class="card__title--mark">insights</mark> that help your
+            business grow.
+          </h1>
+
+          <p class="card__text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <ul class="card__list">
+            <li class="card__list__item item">
+              <span class="item__label">10k+</span>
+              <span class="item__sub-label">COMPANIES</span>
+            </li>
+            <li class="card__list__item item">
+              <span class="item__label">314</span>
+              <span class="item__sub-label">TEMPLATES</span>
+            </li>
+            <li class="card__list__item item">
+              <span class="item__label">12M+</span>
+              <span class="item__sub-label">QUERIES</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

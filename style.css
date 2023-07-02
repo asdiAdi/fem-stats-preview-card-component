@@ -1,17 +1,9 @@
 :root {
   /*colors*/
-  --pure-white: #ffffff;
-  --cream: #f2eae2;
-  --aurometal-saurus: #6c7289;
-  --deep-aquamarine: #3d8168;
-  --deep-aquamarine-hover: #1a4032;
-  --gunmetal: #1c232b;
-
-  /*fonts*/
-  --font-overline: 500 0.75rem Montserrat, sans-serif;
-  --font-display: 700 2rem/2rem Fraunces, sans-serif;
-  --font-body: 500 0.875rem/1.4375rem Montserrat, sans-serif;
-  --font-button-text: 700 0.875rem Montserrat, sans-serif;
+  --ebony: #0a0c1c;
+  --mirage: #1b1937;
+  --medium-purple: #ab5cdb;
+  --white: #ffffff;
 }
 
 * {
@@ -26,11 +18,107 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cream);
+  background-color: var(--ebony);
 }
 
+.card {
+  width: 327px;
+  height: 780px;
+  background-color: var(--mirage);
+  box-shadow: 0 1.25rem 1.25rem -0.625rem hsla(233, 28%, 13%, 0.231);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card__hero {
+  background: var(--medium-purple);
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+  mix-blend-mode: multiply;
+  opacity: 0.7511;
+}
+
+.card__body {
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.card__title {
+  color: var(--white);
+  font: 700 1.75rem/2rem Inter, sans-serif;
+  text-align: center;
+}
+
+.card__title--mark {
+  color: var(--medium-purple);
+  background-color: transparent;
+}
+
+.card__text {
+  margin-top: 1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font: 400 0.9375rem/1.5625rem Inter, sans-serif;
+  text-align: center;
+}
+
+.card__list {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.125rem;
+  align-items: center;
+  color: var(--white);
+}
+
+.item__label {
+  font: 700 1.5rem Inter, sans-serif;
+}
+
+.item__sub-label {
+  color: hsla(0, 0%, 100%, 0.6);
+  font: 400 0.75rem/1.5625rem "Lexend Deca", sans-serif;
+  letter-spacing: 0.0625rem;
+}
 @media only screen and (min-width: 1440px) {
   .card {
-    width: 600px;
+    width: 1110px;
+    height: 446px;
+    flex-direction: row-reverse;
+  }
+  .card__img {
+    width: fit-content;
+  }
+  .card__body {
+    padding: 4.5rem;
+  }
+  .card__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    text-align: left;
+  }
+  .card__text {
+    margin-top: 1.5625rem;
+    text-align: left;
+  }
+  .card__list {
+    margin-top: 4.5rem;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .item {
+    align-items: flex-start;
   }
 }
