@@ -1,4 +1,4 @@
-This is a solution to the Stats preview card component challenge on Frontend Mentor.
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
 ### Screenshots
 
@@ -12,8 +12,8 @@ This is a solution to the Stats preview card component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [Vercel]()
+- Solution URL: [GitHub](https://github.com/asdiAdi/fem-stats-preview-card-component)
+- Live Site URL: [Vercel](https://fem-stats-preview-card-component-khaki.vercel.app/
 
 ### Built with
 
